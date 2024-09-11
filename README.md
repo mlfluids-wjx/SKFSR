@@ -23,6 +23,7 @@ A deep-learning model combines guidance of physics and data to learn observation
 - Runing SKFSR_main.py with arguments 
 - e.g., python SKFSR_main.py -m DB_unsp_single -c Channel -b 32 -s 4 -e 1000
 - Some basic denotes have been made in SKFSR_main.py, refer to python SKFSR_main.py --help
+
     parser.add_argument('-m', dest='method', type=str,
                     default='SKFSR_DB_unsp_single',
                     help=' arguments:  binarization + training strategy + snapshot quantity'  
@@ -38,7 +39,7 @@ A deep-learning model combines guidance of physics and data to learn observation
     parser.add_argument('-s', dest='scaler', type=int, default=1, help="s x 2 = Super Resolution Ratio")
 
     parser.add_argument('-e',dest='epochs', type=int, default=1000, help="Number of Epochs")
-    
+
     parser.add_argument('--load', dest='load', default=False, action='store_true')
 
 ## General hyperparameters
