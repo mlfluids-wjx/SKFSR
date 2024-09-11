@@ -28,12 +28,17 @@ A deep-learning model combines guidance of physics and data to learn observation
                     help=' arguments:  binarization + training strategy + snapshot quantity'  
                     'DB/ TB + unsp/ semi/ sup + single/ few/ standard'
                     ' eg. SKFSR_DB_unsp_single')
+
     parser.add_argument('-c', dest='case', type=str, default='Channel', help=
                         'Name of Dataset: Channel/ Iso/ Koch126/'
                         ' eye/ Koch15/ Koch146/ Sire189/ ')
+
     parser.add_argument('-b', dest='batch_size', type=int, default=32, help="Batch Size")
+
     parser.add_argument('-s', dest='scaler', type=int, default=1, help="s x 2 = Super Resolution Ratio")
+
     parser.add_argument('-e',dest='epochs', type=int, default=1000, help="Number of Epochs")
+    
     parser.add_argument('--load', dest='load', default=False, action='store_true')
 
 ## General hyperparameters
