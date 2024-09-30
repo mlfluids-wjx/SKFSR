@@ -74,7 +74,7 @@ Cases C2a&b are downloaded from Johns Hopkins Turbulence Databases (https://turb
 * C2b: isotropic turbulence
     iso_velocity_pressure_256x256_2to8.npy
 
-Please download turbulence data from () and put them into the "data" folder
+Please download turbulence data from (https://osf.io/5whfj/) and put them into the "data" folder
 
 ## Requirements
 The model is built in Python environment using TensorFlow v2 backend, basically using packages of:
